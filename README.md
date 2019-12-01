@@ -18,3 +18,13 @@ aws lambda create-function --function-name lambda-uppercase --role arn:aws:iam::
 ```shell script
 mvn -U clean package -DskipTests && aws lambda update-function-code --function-name lambda-uppercase --zip-file fileb://target/lambda-uppercase-0.0.1-SNAPSHOT-aws.jar --publish
 ```
+
+### cURL Command
+```shell script
+curl -X POST \
+  https://{restapi_id}.execute-api.{region}.amazonaws.com/{stage_name}/{path} \
+  -H 'Content-Type: application/json' \
+  -d '{
+	"message": "Singapore"
+}'
+```
