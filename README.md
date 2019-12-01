@@ -1,4 +1,4 @@
-# lambda-uppercase
+# spring-cloud-function-aws
 This is a sample code for Spring Cloud Function with AWS Lambda adapter.
 
 ## Getting Started
@@ -28,3 +28,7 @@ curl -X POST \
 	"message": "Singapore"
 }'
 ```
+
+## Reference
+
+1. https://github.com/spring-cloud/spring-cloud-function/tree/master/spring-cloud-function-samples/
